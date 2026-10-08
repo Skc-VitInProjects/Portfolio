@@ -2,6 +2,10 @@
 
 A responsive React/Vite portfolio served by an Express API with MongoDB-backed contact submissions.
 
+## Live deployment
+
+[https://skand-portfolio.onrender.com/](https://skand-portfolio.onrender.com/)
+
 ## Stack
 
 - **Frontend:** React 18, Vite, CSS
@@ -48,7 +52,7 @@ In Render, set these environment variables:
 
 - `NODE_ENV=production`
 - `MONGODB_URI=<your MongoDB Atlas connection string>`
-- `FRONTEND_URL=https://<your-service-name>.onrender.com`
+- `FRONTEND_URL=https://skand-portfolio.onrender.com`
 
 Add the Render service's outbound access to MongoDB Atlas Network Access. A production process exits when MongoDB cannot connect, so Render will report a failed deploy instead of serving a partially broken contact form.
 
@@ -61,4 +65,4 @@ Add the Render service's outbound access to MongoDB Atlas Network Access. A prod
 - Project cards use horizontal touch scrolling on small screens.
 - External links open in a new tab with `noreferrer`; email and phone links use the user's installed handlers.
 
-Before publishing, verify the deployed `/api/health`, project links, contact form success/error states, and the layout at mobile, tablet, and desktop widths.
+The deployed site is available at [https://skand-portfolio.onrender.com/](https://skand-portfolio.onrender.com/). Verify `/api/health`, project links, contact form success/error states, and the layout at mobile, tablet, and desktop widths after each production deployment.
